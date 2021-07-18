@@ -8,7 +8,7 @@
         ],
         "module": "commonjs",
         "declaration": true,
-        "outDir": "./lib",
+        "outDir": "./",
         "strict": true
     },
     "include": [
