@@ -88,7 +88,7 @@ const parents: {
 storageData.setData({user, parents});
 /* 
 storageData.data.user = { name: "Iam", lastName: "Costa", age: "24" },
-storageData.data.parents = {motherName: "Francisca" fatherName: "Antônio"}
+storageData.data.parents = {motherName: "Francisca", fatherName: "Antônio"}
 */
 ```
 
