@@ -10,3 +10,9 @@ export declare function useLocalStorage<S = any>(config: UseLocalStorageConfigIn
     removeItem: (key: string) => void;
     clearStorage: () => void;
 };
+export declare function useLocalStoragePrototype<S = any>(key: string): {
+    item: S;
+    setItem: React.Dispatch<React.SetStateAction<S | null>>;
+    removeItem: () => void;
+    clearStorage: () => void;
+};
