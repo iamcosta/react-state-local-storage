@@ -1,0 +1,40 @@
+{
+  "name": "react-state-local-storage",
+  "version": "1.0.0",
+  "description": "React hook handler for localstorage persistence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamcosta/react-state-local-storage.git"
+  },
+  "keywords": [
+    "react",
+    "local-storage",
+    "hook"
+  ],
+  "author": "Iam Barroso da Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamcosta/react-state-local-storage/issues"
+  },
+  "homepage": "https://github.com/iamcosta/react-state-local-storage#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
