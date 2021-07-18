@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/iamcosta/react-state-local-storage/issues"
   },
-  "homepage": "https://github.com/iamcosta/react-state-local-storage#readme",
+  "homepage": "https://iamcosta.github.io/react-state-local-storage/",
   "devDependencies": {
     "prettier": "^2.3.2",
     "tslint": "^6.1.3",
