@@ -1,20 +1,23 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export interface UseLocalStorageConfigInterface<U> {
+export interface UseLocalStorageConfigProps<U> {
   baseName: string;
   initialData: U;
 }
 
-export function useLocalStorage<S = any>(
-  config: UseLocalStorageConfigInterface<S>,
-): {
-  data: S;
-  setData: React.Dispatch<React.SetStateAction<S | null>>;
+export interface UseLocalStorageActionsProps<P> {
+  data: P;
+  setData: React.Dispatch<React.SetStateAction<P | null>>;
   setItem: <C>(key: string, data: C) => void;
   removeItem: (key: string) => void;
   clearStorage: () => void;
-};
-export function useLocalStorage<T>(config: UseLocalStorageConfigInterface<T>) {
+}
+
+export function useLocalStorage<S = any>(
+  config: UseLocalStorageConfigProps<S>,
+): UseLocalStorageActionsProps<S>;
+
+export function useLocalStorage<T>(config: UseLocalStorageConfigProps<T>) {
   const [storageData, setStorageData] = useState<T | null>(null);
 
   const handleSetData = useCallback(
